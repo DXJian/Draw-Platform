@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>详细信息</title>
+	<meta name="keywords" content="详细信息" />
+	<meta name="description" content="详细信息" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="" />
+	<style type="text/css">
+	</style>
+	<script type="text/javascript"></script>
+</head>
+<body>
+	<div style="position: absolute;left: 50%;transform:translateX(-50%)" >
+		<div style="font-size:23px;font-weight:bold;white-space:nowrap">关于编号<font color=red><?php echo $data['id'] ?></font>的详细信息如下：</div>
+      	<hr />
+		<nobr />中奖时间：<?php echo $data['times'] ?>
+		<br/>
+		<br/>
+		<nobr />奖品名称：<?php echo $data['gift'] ?>
+		<br/>
+		<br/>
+		<nobr />奖品价格：<?php echo '信息暂未录入' ?>
+		<br/>
+		<br/>
+		<nobr />中奖者姓名：<?php echo '信息暂未录入' ?>
+		<br/>
+		<br/>
+		<nobr />中奖者联系方式：<?php echo '信息暂未录入' ?>
+		<hr />
+		<a href='?'>返回</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>抽奖结果查询后台</title>
+	<meta name="keywords" content="抽奖结果查询后台" />
+	<meta name="description" content="抽奖结果查询后台" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="" />
+	<style type="text/css">
+		.t1{color:red;}
+		.t2{background:#cccccc}
+	</style>
+	<script type="text/javascript"></script>
+</head>
+<body>
+<div style="position: absolute;left: 50%;transform:translateX(-50%);white-space:nowrap" >
+<div style="font-size: 23px;font-weight: bold;text-align: center">抽奖结果</div>
+<br />
+<div  class="fr">
+<table border='1'>
+ 
+    <tr>
+		<th >编号</th>
+		<th >中奖时间</th>
+		<th >奖品内容</th>
+		<th >数据管理</th>
+	</tr>
+
+	<?php
+	foreach( $data1 as  $key => $rec )
+	{
+	?>
+	<tr>
+		<td ><?php echo $rec['id']; ?></td>
+		<td class='t1'><?php echo $rec['times']; ?></td>
+		<td class='t2'><?php echo $rec['gift']; ?></td>
+		<td>
+			<a href='?act=del&id=<?php echo $rec['id']; ?>' onclick='return queren()'>删除</a>
+			<a href='?act=detail&id=<?php echo $rec['id']; ?>' >详细</a>
+		</td>
+	</tr>
+	<?php
+	}
+	?>
+</table>
+<br />
+当前抽奖记录总数：<?php echo $data2;?>
+</div>
+</div>
+</body>
+</html>
+<script>
+	function queren(){
+		return window.confirm("是否确认删除？");
+	}
+</script>
+
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>  	
+<script>
+	$(function(){
+	 setInterval(aa,1000);
+	 function aa(){
+	$(".fr").load(location.href+" .fr");
+	 }
+	})
+</script>
