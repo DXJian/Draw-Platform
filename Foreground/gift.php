@@ -4,7 +4,7 @@
   
 <?php
 header("content-type:text/html;charset=utf-8");
-@ $db=mysqli_connect("localhost","yd0602_com","668866","yd0602_com");
+@ $db=mysqli_connect("localhost","用户名","密码","数据库名称");
 if(mysqli_connect_errno()){
 	echo("Error:Couldnot connect the database");
 	exit;
