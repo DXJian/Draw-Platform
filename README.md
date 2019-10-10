@@ -7,4 +7,4 @@
  - [X] 【抽奖平台开发（3）】[将抽奖结果提交的表单上传至数据库，完成抽奖平台前台开发](https://dengxj.blog.csdn.net/article/details/99869502)（PHP+MySQL）
  - [X] 【抽奖平台开发（4）】[基于MVC模式实现数据后台管理操作的可视化](https://dengxj.blog.csdn.net/article/details/100816981)（PHP+HTML+MySQL）
 ***
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191005152146573.gif#pic_center)
+<div align=center><src="https://img-blog.csdnimg.cn/20191005152146573.gif"/></div>
